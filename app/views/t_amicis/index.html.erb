@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Amici</h1>
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Cognome</th>
+    <th>Email</th>
+    <th>Telefono</th>
+    <th>Instagram</th>
+  </tr>
+  <% @t_amicis.each do |t_amici| %>
+  <tr>
+    <td><%= t_amici.nome %></td>
+    <td><%= t_amici.cognome %></td>
+    <td><%= t_amici.email %></td>
+    <td><%= t_amici.telefono %> </td>
+    <td><%= t_amici.instagram %></td>
+  </tr>
+</table>
+<%= link_to "Mostra amico", t_amici %>
+<% end %>
+<%= link_to "Nuovo amico", new_t_amici_path %>

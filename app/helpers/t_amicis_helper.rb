@@ -1,0 +1,2 @@
+module TAmicisHelper
+end

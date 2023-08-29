@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @t_amici %>
+
+<div>
+  <%= link_to "Modifica questo amico", edit_t_amici_path(@t_amici) %> |
+  <%= link_to "Torna indietro a mostra amici", t_amicis_path %>
+
+  <%= button_to "Elimina questo amico", @t_amici, method: :delete %>
+</div>
